@@ -12,6 +12,10 @@ export default [
         text: "Agenda",
         path: "/profile"
       },
+      {
+        text: "Devedores",
+        path: "/cliente_devedor"
+      },
     ]
   },
   {

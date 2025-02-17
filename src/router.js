@@ -7,12 +7,8 @@ import Camisa from "./views/cadastra_camisa.vue";
 import camisa_cor from "./views/cor_camisa.vue";
 import tamanho_camisa from "./views/tamanho_camisa.vue"
 import caneca from "./views/caneca_estoque.vue"
+import cliente_devedor from "./views/cliente_devedor.vue"
 import defaultLayout from "./layouts/side-nav-outer-toolbar";
-import simpleLayout from "./layouts/single-card";
-
-function loadView(view) {
-  return () => import(/* webpackChunkName: "login" */ `./views/${view}.vue`)
-}
 
 const router = new createRouter({
   routes: [
@@ -71,45 +67,13 @@ const router = new createRouter({
       component: caneca
     },
     {
-      path: "/login-form",
-      name: "login-form",
+      path: "/cliente_devedor",
+      name: "cliente_devedor",
       meta: {
         requiresAuth: false,
-        layout: simpleLayout,
-        title: "Sign In"
+        layout: defaultLayout
       },
-      component: loadView("login-form")
-    },
-    {
-      path: "/reset-password",
-      name: "reset-password",
-      meta: {
-        requiresAuth: false,
-        layout: simpleLayout,
-        title: "Reset Password",
-        description: "Please enter the email address that you used to register, and we will send you a link to reset your password via Email."
-      },
-      component: loadView("reset-password-form")
-    },
-    {
-      path: "/create-account",
-      name: "create-account",
-      meta: {
-        requiresAuth: false,
-        layout: simpleLayout,
-        title: "Sign Up"
-      },
-      component: loadView("create-account-form"),
-    },
-    {
-      path: "/change-password/:recoveryCode",
-      name: "change-password",
-      meta: {
-        requiresAuth: false,
-        layout: simpleLayout,
-        title: "Change Password"
-      },
-      component: loadView("change-password-form")
+      component: cliente_devedor
     },
     {
       path: "/",
