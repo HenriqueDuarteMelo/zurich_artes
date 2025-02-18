@@ -1,1 +1,3 @@
-module.exports = { publicPath: process.env.NODE_ENV === 'production' ? '/zurich_artes/' : '/' };
+module.exports = {
+    publicPath: './', // Isso usa o caminho relativo do diretório onde o index.html está
+};

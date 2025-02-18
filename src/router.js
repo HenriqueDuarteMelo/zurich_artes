@@ -88,7 +88,7 @@ const router = new createRouter({
       redirect: "/home"
     }
   ],
-  history: createWebHashHistory()
+  history: createWebHashHistory(process.env.BASE_URL),
 });
 
 router.beforeEach((to, from, next) => {
