@@ -1,4 +1,4 @@
-var url_padrao = 'https://api-zurich-gngb.vercel.app/api/'
+var url_padrao = 'https://189.29.149.231:3003/api/'
 //192.168.10.5
 
 export default {
