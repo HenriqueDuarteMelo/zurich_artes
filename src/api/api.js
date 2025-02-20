@@ -1,4 +1,4 @@
-var url_padrao = 'https://189.29.149.231:3003/api/'
+var url_padrao = 'https://189.29.149.231:8080/api/'
 //192.168.10.5
 
 export default {
